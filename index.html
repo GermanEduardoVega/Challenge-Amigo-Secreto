@@ -1,4 +1,4 @@
-livePreview.runServerLoggingTask<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <!-- Sección de la cabecera del documento -->
 <head>
@@ -22,12 +22,12 @@ livePreview.runServerLoggingTask<!DOCTYPE html>
         <section class="input-section">
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
             <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                <input class="input-name" id="amigo" type="text" placeholder="Escribe un nombre">
                 <button class="button-add" onclick="agregarAmigo()">Añadir</button>
             </div>
-            <!-- Lista de nombres añadidos -->   
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+            <!-- Lista desordenada de nombres añadidos -->   
+            <ul class="name-list"   id="listaAmigos"    aria-labelledby="listaAmigos" role="list"></ul>
+            <ul class="result-list" id="resultado"      aria-live="polite"          ></ul>
 
             <!-- Botón para sortear el amigo secreto -->
             <div class="button-container">
@@ -36,6 +36,15 @@ livePreview.runServerLoggingTask<!DOCTYPE html>
                     Sortear amigo
                 </button>
             </div>
+
+            <!-- Botón para finalizar el juego -->
+            <div class="button-container">
+                <button class="button-end" id="botonFinalizar" onclick="finalizarJuego()" aria-label="Finalizar juego" style="display: none;">
+                    <img src="assets/stop_circle.png" alt="Ícono para finalizar">
+                    Finalizar juego
+                </button>
+
+
         </section>
     </main>
 

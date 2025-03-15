@@ -41,15 +41,16 @@ body {
 
 /* Sección de entrada */
 .input-section {
-    flex: 60%;
+    flex: 90%;
     background-color: var(--color-secondary);
     border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border-radius: 600px 600px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     width: 100%;
+    gap: 10px;
 }
 
 /* Títulos */
@@ -88,8 +89,12 @@ body {
 }
 
 .button-container {
+    text-align: center;
     width: 300px;
     justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
 }
 
 /* Estilos de entrada de texto */
@@ -106,7 +111,7 @@ body {
 
 /* Estilos de botón */
 button {
-    padding: 15px 30px;
+    padding: 10px 15px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     border: 2px solid #000;
@@ -146,6 +151,7 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
@@ -154,9 +160,33 @@ ul {
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Botón de finalizar juego */
+.button-end {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-end img {
+    margin-right: 10px; /* Ajusta el margen según sea necesario */
+}
+
+.button-end:hover {
     background-color: var(--color-button-hover);
 }
